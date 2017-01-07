@@ -1,77 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>my page</title>
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <div id="home">
-        <div id="header">
-            <div class="title">
-                 <h1>MY CLIPBOARD</h1>
-                 <p>welcome to my website</p>
-            </div>
-            <div id="header-move">
-               <ul>
-                   <li class="face_5" onmouseover = "liMoveIn(this,700)" onmouseout="liMoveOut(this,600)"></li>
-                   <li class="face_4" onmouseover = "liMoveIn(this,600)" onmouseout="liMoveOut(this,500)"></li>
-                   <li class="face_3" onmouseover = "liMoveIn(this,500)" onmouseout="liMoveOut(this,400)"></li>
-                   <li class="face_2" onmouseover = "liMoveIn(this,400)" onmouseout="liMoveOut(this,300)"></li>
-                   <li class="face_1" onmouseover = "liMoveIn(this,300)" onmouseout="liMoveOut(this,200)"></li>
-               </ul>
-            </div>
-            <div id="header-music">
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>my  page</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <style>
 
-            </div>
+  </style>
+ </head>
+ <body>
+    <div>
+        <img id="placeHolder"  src="images/1.jpg"/>
+    <div>
+    <div id="content">
+        <blockquote>
+            真的猛士，敢于直面惨淡的人生，敢于正视淋漓的鲜血.而我，竟敢饮下自己的鲜血
+            <footer>
+            ~
+            <cite>学会勇敢</cite>
+            </footer>
+        </blockquote>
 
-        </div>
-        <div id="main">
-            <div id="main-picture"><!-- <img src="iamges/pic_3.jpg" alt="picture" width="200px" height="200px"> -->
-                <div id="play-box">
-                    <div class="pre" class="pic_btn"></div>
-                    <div class="next" class="pic_btn"></div>
-                    <div class="playTitle">
-                       <p class="l_p">我的旅途不是星辰大海</p>
-                       <p class="r_p">而是万水千山</p>
-                    </div>
-                    <div class="smallTitle">
-                        <ul>
-                            <li class="thisTitle"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <ul class="play">
-                           <li><a href="#"><img src="images/1.jpg" ></a></li>
-                           <li><a href="#"><img src="images/2.jpg" ></a></li>
-                           <li><a href="#"><img src="images/3.jpg" ></a></li>
-                           <li><a href="#"><img src="images/4.jpg" ></a></li>
-                           <li><a href="#"><img src="images/5.jpg" ></a></li>
-                           <li><a href="#"><img src="images/6.jpg" ></a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div id="main-content"></div>
-            <div id="main-sidebar">
-               <!--  <ul>
-                    <li><a href="#">listing_1</a></li>
-                    <li><a href="#">listing_2</a></li>
-                    <li><a href="#">listing_3</a></li>
-                    <li><a href="#">listing_4</a></li>
-                    <li><a href="#">listing_5</a></li>
-                </ul> -->
-            </div>
-        </div>
-        <div id="footer"></div>
     </div>
-    <script type="text/javascript" src="javaScript/myPage.js"></script>
-    <script type="text/javascript" src="javaScript/picMove.js"></script>
-</body>
+    <div id="banner">
+        <ul id="imagegallery">
+            <li><a href="#" title="this page" name="images/1.jpg">首页</a></li>
+            <li><a href="resume/index.html" title="my resume" name="images/2.jpg" target="_blank ">简历</a></li>
+            <li><a href="personal/index.html" title="personal" name="images/3.jpg" target="_blank">个人</a></li>
+            <li><a href="#" title="尚未拥有自己的博客，待以后开发" name="images/4.jpg">博客</a></li>
+            <li><a href="about/index.html" title="about my page" name="images/5.jpg" target="_blank">关于</a></li>
+        </ul>
+    </div>
+    <script src="javaScript/background_change.js"></script>
+<!--     <script src="javaScript/content_change.js"></script> -->
+ </body>
 </html>
