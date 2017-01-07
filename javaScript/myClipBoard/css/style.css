@@ -1,0 +1,44 @@
+/*font_face*/
+@font-face {
+    font-family: "Museo Sans X";
+    src: url(../fonts/MuseoSans_500.otf);
+    }
+body {
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+
+    }
+
+    /*header*/
+#header .title{width:500px;position: absolute;top:70px;right:0;color:rgb(222,156,83);}
+#header h1{font-size: 50px;}
+#header p{font-size: 15px;text-transform: uppercase;text-indent: 5px;color: #fff;}
+#header-move{height: 210px;width:700px;position: absolute;top:0;left:0;}
+#header ul{float: left;}
+#header ul li{display: block;height: 40px; }
+#header .face_5{width:600px;background-color: rgb(230,179,61);}
+#header .face_4{width:500px;background-color: rgb(217,104,49);}
+#header .face_3{width:400px;background-color: rgb(153,80,84);}
+#header .face_2{width:300px;background-color: rgb(39,73,98);}
+#header .face_1{width:200px;background-color: rgb(23,44,60);}
+
+
+/*main-picture*/
+#play-box{position: relative;width: 400px;height: 600px;overflow: hidden;}
+#play-box .playTitle{background-color: rgba(173,195,192,0.8);width: 400px;height:100px;z-index: 10;position: absolute;top:0;}
+#play-box .playTitle p{height:30px;line-height: 25px;font-size: 25px;  }
+#play-box .l_p{position: absolute;top:20px;left: 0;}
+#play-box .r_p{position: absolute;bottom: 20px;right: 0;}
+#play-box .play li{float:left;}
+#play-box .play{width: 9999px;height: 600px;position: absolute;top:0;left: 0;}
+
+/*#play-box .pic_btn{opacity:0.2;filter:alpha(opacity=10);}*/
+#play-box .pre{position: absolute;background: url(../images/l.png) no-repeat;width: 45px;height:45px;
+    left:0px;top:550px;z-index: 10;cursor: pointer;opacity:0.2;filter:alpha(opacity=20);}
+#play-box .next{position: absolute;background: url(../images/r.png) no-repeat;width: 45px;height:45px;
+    right:0px;top:550px;z-index: 10;cursor: pointer;opacity:0.2;filter:alpha(opacity=20);}
+
+
+#play-box .smallTitle ul{position: absolute;width:260px;height:15px;bottom:15px;left:75px;z-index: 10;}
+#play-box .smallTitle ul li{float:left;width: 40px;background-color:rgba(0,0,0,0.7);margin-left:1px;height: 13px;cursor: pointer;overflow:hidden;}
+#play-box .smallTitle .thisTitle{background-color: #000;}
+
