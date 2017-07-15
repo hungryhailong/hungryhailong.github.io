@@ -125,7 +125,8 @@ html{
 .resumeEditor blockquote ul{
   text-indent:5px;
 }
-.resumeEditor a{
+
+.resumeEditor p a{
     display: block;
     height: 30px;
     line-height: 30px;
@@ -147,6 +148,7 @@ html{
   left: 100px; 
   filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
 }
+/*谢谢你们的耐心观看!*/
 `],
         currentMarkdown: '',
         fullMarkdown: `
@@ -180,7 +182,17 @@ html{
    * 项目描述：根据个人需求设计网页并通过代码实现。
    * 本人职责：项目负责人。负责项目的设计，网页的代码实现以及后续的维护。
    * 主要业绩：该网站已于2016年10月完成，发布到互联网
->
+
+
+> ### 中国新东北振新研究院站点                        2017.3至2017.4
+   * 项目描述：中国新东北振新研究院站点页面实现
+   * 本人职责：项目成员。参与页面设计与实现，主要技术bootstrap，div+css，jquery
+   * 主要业绩：该项目已经上线_http://219.216.96.131/_
+
+实习经历
+----
+   * 2017.6-2017.8  广州蓝盾科技股份有限公司 
+   * 从事信息安全相关任务，参与web安全包括web渗透，web攻防，靶场环境搭建等方面
 
 校园经历
 ----
@@ -210,6 +222,7 @@ html{
         await this.progressivelyShowStyle(1)
         await this.showHtml()
         await this.progressivelyShowStyle(2)
+        await this.scrollGoTop()
       },
       showHtml: function () {
         return new Promise((resolve, reject) => {
@@ -217,6 +230,13 @@ html{
           resolve()
         })
       },
+      scrollGoTop:function(){
+        return new Promise((resolve,reject) => {
+          this.$refs.resumeEditor.backTop()
+          resolve()
+        })
+      },
+
       progressivelyShowStyle(n) {
         return new Promise((resolve, reject) => {
           let interval = this.interval
@@ -233,6 +253,7 @@ html{
               if (style.substring(l - 1, l) === '\n' && this.$refs.styleEditor) {
                 this.$nextTick(() => {
                   this.$refs.styleEditor.goBottom()
+                  this.$refs.resumeEditor.goBottom()
                 })
               }
               setTimeout(showStyle, interval)

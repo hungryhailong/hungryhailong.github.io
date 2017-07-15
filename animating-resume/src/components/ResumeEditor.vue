@@ -18,6 +18,19 @@
     methods: {
       goBottom: function () {
         this.$refs.container.scrollTop = 100000
+      },
+      backTop:function(){
+       
+        this.$refs.container.scrollTop = 1000;
+        var that = this;
+        var timer = setInterval(function(){
+          var speed = Math.floor(-that.$refs.container.scrollTop/5);
+          that.$refs.container.scrollTop =  that.$refs.container.scrollTop + speed;
+          if( that.$refs.container.scrollTop == 0){
+            clearInterval(timer);
+          }
+        },100)
+
       }
     }
   }
