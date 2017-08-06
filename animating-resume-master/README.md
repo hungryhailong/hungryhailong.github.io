@@ -1,13 +1,13 @@
 # 一个会动的简历模板
 
-> This is my resume
+> This is my animating-resume
 
-[预览](https://jirengu-inc.github.io/animating-resume/dist/)
+[预览](https://hungryhailong.github.io/animating-resume/dist/)
 
 ## 使用方法
 
 ``` bash
-git clone git@github.com:jirengu-inc/animating-resume.git
+git clone git@github.com:hungryhailong/animating-resume.git
 cd animating-resume
 npm install
 npm run dev
